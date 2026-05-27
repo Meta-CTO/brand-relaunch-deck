@@ -427,7 +427,7 @@
         </aside>
       </section>
 
-      <!-- ============ SLIDE 8: CLIENT EXAMPLES (with logos) ============ -->
+      <!-- ============ SLIDE 8: CLIENT EXAMPLES (two rows, with logos) ============ -->
       <section data-background="transparent">
         <div class="slide-frame">
           <div class="brand-bar">
@@ -437,71 +437,83 @@
           <span class="eyebrow">What this looks like in real work</span>
           <h2>Same pattern. <span class="hl">Different clients.</span></h2>
 
-          <div class="card-grid c5" style="margin-top: 20px;">
+          <div class="client-grid">
 
-            <div class="card">
-              <div class="card-logo"><img src="assets/logos/spinutech.png" alt="Spinutech"></div>
-              <div class="title" style="font-size: 0.8em;">Revenue Operations</div>
-              <div class="card-label">Workflow</div>
-              <div class="card-value">Lead scoring + proposal generation</div>
-              <div class="card-label">Systems</div>
-              <div class="card-value">HubSpot, Apollo, DarcyIQ, Drive</div>
-              <div class="card-label">Output</div>
-              <div class="card-value">ICP scores, proposal drafts, enriched contacts</div>
-              <div class="card-label">Control</div>
-              <div class="card-value">ICP review gates, evals at 92%, override learning</div>
+            <!-- Row 1: 3 cards -->
+            <div class="client-card">
+              <div class="cc-top">
+                <div class="cc-logo"><img src="assets/logos/spinutech.png" alt="Spinutech"></div>
+                <span class="cc-type ops-ai">Ops AI</span>
+              </div>
+              <div class="cc-headline">AI scores leads and drafts proposals from GTM context</div>
+              <div class="cc-desc">Agents use ICP rules, CRM history, and 115 business docs to qualify leads and assemble proposals automatically.</div>
+              <div class="cc-row">
+                <span class="cc-chip">HubSpot</span>
+                <span class="cc-chip">Apollo</span>
+                <span class="cc-chip">DarcyIQ</span>
+                <span class="cc-chip">Drive</span>
+              </div>
             </div>
 
-            <div class="card">
-              <div class="card-logo"><img src="assets/logos/alliant.png" alt="Alliant" class="invert"></div>
-              <div class="title" style="font-size: 0.8em;">Compliance &amp; Governed AI</div>
-              <div class="card-label">Workflow</div>
-              <div class="card-value">Violation triage, CPR ingestion, risk detection</div>
-              <div class="card-label">Systems</div>
-              <div class="card-value">Payroll CPRs, wage determinations, internal platform</div>
-              <div class="card-label">Output</div>
-              <div class="card-value">Risk scores, copilot responses, restitution drafts</div>
-              <div class="card-label">Control</div>
-              <div class="card-value">Citation gates, audit trail, cost tracking, HITL review</div>
+            <div class="client-card">
+              <div class="cc-top">
+                <div class="cc-logo"><img src="assets/logos/alliant.png" alt="Alliant" class="invert"></div>
+                <span class="cc-type product-ai">Product AI</span>
+              </div>
+              <div class="cc-headline">AI copilot triages compliance violations inside the platform</div>
+              <div class="cc-desc">11 AI surfaces embedded in Alliant's product: risk detection, CPR ingestion, copilot with citations, and governed review queues.</div>
+              <div class="cc-row">
+                <span class="cc-chip">Payroll CPRs</span>
+                <span class="cc-chip">Wage data</span>
+                <span class="cc-chip">Internal platform</span>
+              </div>
             </div>
 
-            <div class="card">
-              <div class="card-logo"><img src="assets/logos/ninjio.svg" alt="NINJIO"></div>
-              <div class="title" style="font-size: 0.8em;">AI Personalization Roadmap</div>
-              <div class="card-label">Workflow</div>
-              <div class="card-value">Training + phishing report automation, Crawl/Walk/Run AI rollout</div>
-              <div class="card-label">Systems</div>
-              <div class="card-value">NINJIO platform, Snowflake, Sigma, MongoDB, Jira</div>
-              <div class="card-label">Output</div>
-              <div class="card-value">Compliance reports, phishing risk scores, platform analytics</div>
-              <div class="card-label">Control</div>
-              <div class="card-value">IA/EA/GA progression gates, SOC2 approval, HITL before releases</div>
+            <div class="client-card">
+              <div class="cc-top">
+                <div class="cc-logo"><img src="assets/logos/ninjio.svg" alt="NINJIO"></div>
+                <span class="cc-type product-ai">Product AI</span>
+              </div>
+              <div class="cc-headline">AI personalizes security training and scores phishing risk</div>
+              <div class="cc-desc">Crawl/Walk/Run AI roadmap: phishing report automation, personalized training paths, and compliance analytics built into the platform.</div>
+              <div class="cc-row">
+                <span class="cc-chip">Snowflake</span>
+                <span class="cc-chip">Sigma</span>
+                <span class="cc-chip">MongoDB</span>
+                <span class="cc-chip">Jira</span>
+              </div>
             </div>
 
-            <div class="card">
-              <div class="card-logo"><span class="card-logo-text">Big State</span></div>
-              <div class="title" style="font-size: 0.8em;">Deal Risk Triage + AI Copilot</div>
-              <div class="card-label">Workflow</div>
-              <div class="card-value">Dispo price risk triage, seller inquiry AI copilot</div>
-              <div class="card-label">Systems</div>
-              <div class="card-value">Custom deal alert system, Intercom + Fin AI, Knowledge Hub</div>
-              <div class="card-label">Output</div>
-              <div class="card-value">Equity confidence alerts, AI-handled inquiries, deal risk flags</div>
-              <div class="card-label">Control</div>
-              <div class="card-value">Drop Confidence thresholds, ARV/equity guardrails, agent review gate</div>
-            </div>
+            <!-- Row 2: 2 cards -->
+            <div class="row-2">
+              <div class="client-card">
+                <div class="cc-top">
+                  <div class="cc-logo"><span class="cc-logo-text">Big State Home Buyers</span></div>
+                  <span class="cc-type ops-ai">Ops AI</span>
+                </div>
+                <div class="cc-headline">AI flags deal risk and handles seller inquiries before an agent touches it</div>
+                <div class="cc-desc">Dispo price triage scores every incoming deal on equity confidence. Intercom + Fin AI fields seller questions from the knowledge hub, escalating only when confidence is low.</div>
+                <div class="cc-row">
+                  <span class="cc-chip">Deal alerts</span>
+                  <span class="cc-chip">Intercom</span>
+                  <span class="cc-chip">Fin AI</span>
+                  <span class="cc-chip">Knowledge Hub</span>
+                </div>
+              </div>
 
-            <div class="card">
-              <div class="card-logo"><span class="card-logo-text">Boondocker</span></div>
-              <div class="title" style="font-size: 0.8em;">AI Event Listing + Moderation</div>
-              <div class="card-label">Workflow</div>
-              <div class="card-value">Image-to-listing creation, content moderation pipeline</div>
-              <div class="card-label">Systems</div>
-              <div class="card-value">iOS/Android app, AI image extraction, admin dashboard, analytics</div>
-              <div class="card-label">Output</div>
-              <div class="card-value">Auto-generated listings from photos, duplicate flags, boost windows</div>
-              <div class="card-label">Control</div>
-              <div class="card-value">Venue review before publish, duplicate detection, content guidelines</div>
+              <div class="client-card">
+                <div class="cc-top">
+                  <div class="cc-logo"><span class="cc-logo-text">Boondocker</span></div>
+                  <span class="cc-type product-ai">Product AI</span>
+                </div>
+                <div class="cc-headline">AI turns a photo of a flyer into a published event listing</div>
+                <div class="cc-desc">Venues photograph a poster and the system extracts structured event data, flags duplicates, and stages the listing for one-tap publish with moderation controls.</div>
+                <div class="cc-row">
+                  <span class="cc-chip">iOS/Android</span>
+                  <span class="cc-chip">Image extraction</span>
+                  <span class="cc-chip">Admin dashboard</span>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -512,7 +524,7 @@
           </div>
         </div>
         <aside class="notes">
-          Pick three examples to talk through. The point is not to give a full case study for each client. The point is to show the pattern. Where was the context scattered? What workflow repeated? What output mattered? What needed to be trusted, reviewed, or measured?
+          Pick three examples to talk through. The point is to show the pattern: scattered context, repeated workflow, useful output, human trust, production controls. Ops AI means internal workflow automation — the AI sits behind the scenes helping the team. Product AI means the AI is part of the product the customer uses. Both are production AI, just different surfaces.
         </aside>
       </section>
 

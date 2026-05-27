@@ -977,7 +977,100 @@
   flex-shrink: 0;
 }
 
-/* ---------- Card logo (client cards) ---------- */
+/* ---------- Client cards (two-row grid) ---------- */
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 22px;
+}
+.client-grid .row-2 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.client-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--mc-line);
+  border-radius: 10px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.client-card .cc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+.client-card .cc-logo img {
+  height: 20px;
+  opacity: 0.85;
+  display: block;
+}
+.client-card .cc-logo img.invert {
+  filter: brightness(0) invert(0.9);
+}
+.client-card .cc-logo-text {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.6em;
+  font-weight: 700;
+  color: var(--mc-text);
+  letter-spacing: 0.04em;
+}
+.client-card .cc-type {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.4em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+.cc-type.ops-ai {
+  background: rgba(232, 146, 42, 0.12);
+  border: 1px solid rgba(232, 146, 42, 0.4);
+  color: var(--mc-orange);
+}
+.cc-type.product-ai {
+  background: rgba(90, 154, 142, 0.12);
+  border: 1px solid rgba(90, 154, 142, 0.4);
+  color: var(--mc-seafoam);
+}
+.client-card .cc-headline {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+.client-card .cc-desc {
+  font-size: 0.5em;
+  color: var(--mc-text-dim);
+  line-height: 1.4;
+}
+.client-card .cc-row {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.client-card .cc-chip {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.4em;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--mc-text-dim);
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Card logo (legacy compat) ---------- */
 .card .card-logo {
   margin-bottom: 6px;
 }
@@ -993,7 +1086,6 @@
   color: var(--mc-text);
   letter-spacing: 0.04em;
 }
-/* Invert dark logos on dark bg */
 .card .card-logo img.invert {
   filter: brightness(0) invert(0.9);
 }
