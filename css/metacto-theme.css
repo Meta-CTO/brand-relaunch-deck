@@ -752,3 +752,324 @@
 
 /* ---------- Speaker notes indicator ---------- */
 .reveal .speaker-controls-notes { display: none; }
+
+/* ---------- Signal cards (industry announcements) ---------- */
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+}
+.signal-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--mc-line);
+  border-radius: 10px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.signal-card .signal-logo {
+  height: 22px;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+.signal-card .signal-logo-text {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--mc-text);
+  letter-spacing: 0.02em;
+}
+.signal-card .signal-quote {
+  font-size: 0.65em;
+  color: var(--mc-text-dim);
+  line-height: 1.45;
+  font-style: italic;
+}
+.signal-card .signal-source {
+  font-size: 0.48em;
+  color: var(--mc-muted);
+  line-height: 1.35;
+}
+
+/* ---------- Iceberg (5% / 95%) ---------- */
+.iceberg {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  margin-top: 28px;
+  align-items: start;
+}
+.iceberg-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.iceberg-tip {
+  background: rgba(232, 146, 42, 0.15);
+  border: 2px solid rgba(232, 146, 42, 0.5);
+  border-radius: 10px 10px 0 0;
+  padding: 18px 20px;
+  text-align: center;
+}
+.iceberg-tip .tip-pct {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  color: var(--mc-orange);
+  line-height: 1;
+}
+.iceberg-tip .tip-label {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.65em;
+  font-weight: 600;
+  color: var(--mc-orange);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+.iceberg-tip .tip-sub {
+  font-size: 0.5em;
+  color: var(--mc-text-dim);
+  margin-top: 6px;
+}
+.iceberg-waterline {
+  height: 3px;
+  background: linear-gradient(to right, transparent, rgba(232,146,42,0.4), transparent);
+}
+.iceberg-depth {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--mc-line);
+  border-radius: 0 0 10px 10px;
+  padding: 18px 20px;
+  text-align: center;
+  flex: 1;
+}
+.iceberg-depth .depth-pct {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2.8em;
+  font-weight: 800;
+  color: var(--mc-text);
+  line-height: 1;
+}
+.iceberg-depth .depth-label {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.6em;
+  font-weight: 600;
+  color: var(--mc-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+.depth-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.depth-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--mc-line);
+  border-radius: 6px;
+  padding: 10px 12px;
+  text-align: left;
+}
+.depth-item .depth-name {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.58em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+.depth-item .depth-desc {
+  font-size: 0.42em;
+  color: var(--mc-muted);
+  line-height: 1.35;
+  margin-top: 3px;
+}
+.depth-item:first-child {
+  background: rgba(232, 146, 42, 0.1);
+  border-color: rgba(232, 146, 42, 0.35);
+}
+.depth-item:first-child .depth-name { color: var(--mc-orange); }
+
+/* ---------- ECE framework cards ---------- */
+.framework-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--mc-line);
+  border-radius: 10px;
+  padding: 24px 22px;
+  border-top: 3px solid var(--mc-line);
+}
+.framework-card.ctx { border-top-color: var(--mc-teal); }
+.framework-card.intel { border-top-color: var(--mc-seafoam-deep); }
+.framework-card.ctrl { border-top-color: var(--mc-orange); }
+.framework-card .fw-label {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.5em;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.framework-card.ctx .fw-label { color: var(--mc-teal); }
+.framework-card.intel .fw-label { color: var(--mc-seafoam-deep); }
+.framework-card.ctrl .fw-label { color: var(--mc-orange); }
+.framework-card .fw-title {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.framework-card .fw-desc {
+  font-size: 0.6em;
+  color: var(--mc-text-dim);
+  margin-bottom: 12px;
+}
+.framework-card .fw-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.framework-card .fw-items li {
+  font-size: 0.6em;
+  color: var(--mc-text-dim);
+  padding: 5px 0;
+  border-top: 1px solid var(--mc-line);
+  line-height: 1.35;
+}
+.framework-card .fw-items li:first-child { border-top: none; }
+
+/* Compact flow (for ECE slide) */
+.compact-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 22px;
+  flex-wrap: nowrap;
+}
+.compact-flow .cf-node {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.5em;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--mc-line);
+  color: var(--mc-text);
+  white-space: nowrap;
+}
+.compact-flow .cf-node.cf-ctx {
+  background: rgba(61, 122, 114, 0.12);
+  border-color: rgba(61, 122, 114, 0.4);
+  color: var(--mc-seafoam);
+}
+.compact-flow .cf-node.cf-orange {
+  background: rgba(232, 146, 42, 0.1);
+  border-color: rgba(232, 146, 42, 0.35);
+  color: var(--mc-orange);
+}
+.compact-flow .cf-arrow {
+  color: var(--mc-orange);
+  font-size: 0.8em;
+  flex-shrink: 0;
+}
+
+/* ---------- Card logo (client cards) ---------- */
+.card .card-logo {
+  margin-bottom: 6px;
+}
+.card .card-logo img {
+  height: 22px;
+  opacity: 0.85;
+  display: block;
+}
+.card .card-logo-text {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.65em;
+  font-weight: 700;
+  color: var(--mc-text);
+  letter-spacing: 0.04em;
+}
+/* Invert dark logos on dark bg */
+.card .card-logo img.invert {
+  filter: brightness(0) invert(0.9);
+}
+
+/* ---------- Quote hierarchy (talk track slide) ---------- */
+.quote-slide .quote-primary {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #fff;
+  max-width: 32ch;
+  line-height: 1.3;
+  margin: 0 auto;
+}
+.quote-slide .quote-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--mc-line);
+  margin: 24px auto;
+  border-radius: 1px;
+}
+.quote-slide .quote-secondary {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: var(--mc-text-dim);
+  max-width: 42ch;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+.quote-slide .quote-tagline {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: var(--mc-orange);
+  margin-top: 36px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ---------- Credit offer (next steps slide) ---------- */
+.credit-offer {
+  margin-top: 22px;
+  padding: 18px 24px;
+  background: rgba(232, 146, 42, 0.06);
+  border: 1px solid rgba(232, 146, 42, 0.3);
+  border-left: 4px solid var(--mc-orange);
+  border-radius: 8px;
+  text-align: left;
+  max-width: 700px;
+}
+.credit-offer .credit-headline {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: var(--mc-orange);
+}
+.credit-offer .credit-desc {
+  font-size: 0.6em;
+  color: var(--mc-text-dim);
+  line-height: 1.45;
+  margin-top: 6px;
+}
+.credit-offer .credit-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.credit-offer .platform-chip {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.45em;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--mc-line);
+  color: var(--mc-text);
+}
