@@ -3,7 +3,7 @@
    Type:    Barlow (heading) / Inter (body)
    Adapted from gauge-capital/friday-pitch dark theme */
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500&display=swap');
 
 :root {
   --mc-orange: #E8922A;
@@ -138,6 +138,22 @@
 .brand-bar img {
   height: 22px;
   opacity: 0.9;
+}
+.metacto-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.metacto-logo img {
+  display: block;
+}
+.metacto-logo .metacto-wordmark {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: #fff;
 }
 .brand-bar .right { color: var(--mc-muted); }
 
