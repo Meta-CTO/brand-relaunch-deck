@@ -1,2 +1,7 @@
 node_modules/
 package-lock.json
+
+# environment variables (post-PolinRider hardening)
+.env
+.env.*
+!.env.example
